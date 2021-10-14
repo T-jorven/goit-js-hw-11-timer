@@ -1,8 +1,8 @@
 const refs = {
-    daysField: document.querySelector('span[data-value="days"]'),
-    hoursField: document.querySelector('span[data-value="hours"]'),
-    minsField: document.querySelector('span[data-value="mins"]'),
-    secsField: document.querySelector('span[data-value="secs"]'),
+    daysRef: document.querySelector('span[data-value="days"]'),
+    hourRef: document.querySelector('span[data-value="hours"]'),
+    minsRef: document.querySelector('span[data-value="mins"]'),
+    secsRef: document.querySelector('span[data-value="secs"]'),
 }
 
 
@@ -34,10 +34,10 @@ class CountdownTimer {
 
     
     updateClockFace({ days, hours, mins, secs }) {
-                refs.daysField.textContent = `${days}`;
-                refs.hoursField.textContent = `${hours}`;
-                refs.minsField.textContent = `${mins}`;
-                refs.secsField.textContent = `${secs}`;
+                refs.daysRef.textContent = `${days}`;
+                refs.hourRef.textContent = `${hours}`;
+                refs.minsRef.textContent = `${mins}`;
+                refs.secsRef.textContent = `${secs}`;
     }
      pad(value) {
     return String(value).padStart(2, '0')
